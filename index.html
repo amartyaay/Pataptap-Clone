@@ -8,19 +8,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.js"
     ></script>
 
-    <style>
-      canvas {
-        width: 100%;
-        height: 100%;
-        background: black;
-      }
-      body,
-      html {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-      }
-    </style>
+    <link href="./style.css" rel="stylesheet" type="text/css">
 
     <script type="text/paperscript" canvas="myCanvas">
 
@@ -197,6 +185,45 @@
     </script>
   </head>
   <body>
-    <canvas id="myCanvas" resize></canvas>
+	<canvas id="myCanvas" resize></canvas>
+	<table id="vKeyboard">
+		<th colspan="10">Virtual Keyboard</th>
+		
+		<tr class="row1">
+			<td class="vq">Q</td>
+			<td class="vw">W</td>
+			<td class="ve">E</td>
+			<td class="vr">R</td>
+			<td class="vt">T</td>
+			<td class="vy">Y</td>
+			<td class="vu">U</td>
+			<td class="vi">I</td>
+			<td class="vo">O</td>
+			<td class="vp">P</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="va">A</td>
+			<td class="vs">S</td>
+			<td class="vd">D</td>
+			<td class="vf">F</td>
+			<td class="vg">G</td>
+			<td class="vh">H</td>
+			<td class="vj">J</td>
+			<td class="vk">K</td>
+			<td class="vl">L</td>
+		</tr>
+
+		<tr class="row3">
+			<td class="vz">Z</td>
+			<td class="vx">X</td>
+			<td class="vc">C</td>
+			<td class="vv">V</td>
+			<td class="vb">B</td>
+			<td class="vn">N</td>
+			<td class="vm">M</td>
+		</tr>
+
+	</table>
   </body>
 </html>
