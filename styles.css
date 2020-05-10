@@ -88,3 +88,25 @@ header p{
   bottom: 0%;
   z-index: -1;
 }
+a{
+  font-size: 12px;
+  font-family: cursive;
+}
+a:link {
+  color: rgb(199, 93, 32);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(134, 134, 130);
+  background-color: transparent;
+  text-decoration: line-through;
+}
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
