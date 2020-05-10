@@ -19,14 +19,14 @@ canvas {
   box-sizing: border-box;
 }
 .app{
-  height: 100vh;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 header h1{
-  margin: 50px 0px 20px 0px;
+  margin: 30px 0px 20px 0px;
   text-align: center;
   font-size: 40px;
 }
@@ -67,15 +67,15 @@ header p{
 @keyframes jumps{
   0%{
     bottom: 0%;
-    left: 20%;
+    left: 2%;
   }
   50%{
     bottom: 50%;
-    left: 50%;
+    left: 47%;
   }
   100%{
     bottom: 0%;
-    left: 80%;
+    left: 86%;
   }
 }
 .visual > div{
@@ -91,6 +91,11 @@ header p{
 a{
   font-size: 12px;
   font-family: cursive;
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 0px 0px auto 0px;
+  padding-bottom: 20%;
 }
 a:link {
   color: rgb(199, 93, 32);
