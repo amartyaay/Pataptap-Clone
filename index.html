@@ -152,6 +152,10 @@
 		   ran=Math.floor(Math.random()*26)
 		   return keys[ran];
 	   }
+	   function reload(){
+	   if(circles.length>=2000)
+	   locatioon.reload();
+	   }
        var circles = [];
        function onKeyDown(event) {
          if(keyData[event.key]){
@@ -166,6 +170,7 @@
 		 else{
 			 alert("Only Alphabetical keys are supported as of now!!!");
 		 }
+		 reload();
 	  }
 	  function onMouseDown(event) {
 		console.log('pressed mouse');
@@ -173,6 +178,7 @@
 		newCircle.fillColor = colorRandom();
 	   keyData[randomKeys()].sound.play();
 		circles.push(newCircle);
+		reload();
    }
    function onMouseDrag(event) {
 	   console.log('pressed mouse');
@@ -180,6 +186,7 @@
 	   newCircle.fillColor = colorRandom();
 	  keyData[randomKeys()].sound.play();
 	   circles.push(newCircle);
+	   reload();
    }
       function onFrame(event) {
         for(var i = 0; i < circles.length; i++){
