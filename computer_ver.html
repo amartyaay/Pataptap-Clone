@@ -164,12 +164,18 @@
 		   return keys[ran];
 	   }
        var circles = [];
+       function reload(){
+	   //console.log(circles.length);
+	   if(circles.length>=2000)
+	   location.reload();
+	   }
        function onMouseDown(event) {
 		console.log('pressed mouse');
 		var newCircle = new Path.Circle(event.middlePoint, 200);
 		newCircle.fillColor = colorRandom();
 	   keyData[randomKeys()].sound.play();
 		circles.push(newCircle);
+		reload();
    }
    function onMouseDrag(event) {
 	   console.log('pressed mouse');
@@ -177,6 +183,7 @@
 	   newCircle.fillColor = colorRandom();
 	  keyData[randomKeys()].sound.play();
 	   circles.push(newCircle);
+	   reload();
    }
       function onFrame(event) {
         for(var i = 0; i < circles.length; i++){
