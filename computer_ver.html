@@ -164,30 +164,16 @@
 		   return keys[ran];
 	   }
        var circles = [];
-       function onKeyDown(event) {
-         if(keyData[event.key]){
-             var maxPoint = new Point(view.size.width, view.size.height);
-             var randomPoint = Point.random();
-             var point = maxPoint * randomPoint;
-             var newCircle = new Path.Circle(point, 500);
-             newCircle.fillColor = colorRandom();
-             keyData[event.key].sound.play();
-             circles.push(newCircle);
-		 }
-		 else{
-			 alert("Only Alphabetical keys are supported as of now!!!");
-		 }
-	  }
-	  function onMouseDown(event) {
+       function onMouseDown(event) {
 		console.log('pressed mouse');
-		var newCircle = new Path.Circle(event.middlePoint, 500);
+		var newCircle = new Path.Circle(event.middlePoint, 200);
 		newCircle.fillColor = colorRandom();
 	   keyData[randomKeys()].sound.play();
 		circles.push(newCircle);
    }
    function onMouseDrag(event) {
 	   console.log('pressed mouse');
-	   var newCircle = new Path.Circle(event.middlePoint, 300);
+	   var newCircle = new Path.Circle(event.middlePoint, 200);
 	   newCircle.fillColor = colorRandom();
 	  keyData[randomKeys()].sound.play();
 	   circles.push(newCircle);
